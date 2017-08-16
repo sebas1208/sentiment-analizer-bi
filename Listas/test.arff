@@ -1,0 +1,30 @@
+@RELATION type_of_sentence
+
+@ATTRIBUTE freq_positive_adj         NUMERIC
+@ATTRIBUTE freq_negative_adj         NUMERIC
+@ATTRIBUTE freq_positive_verb        NUMERIC
+@ATTRIBUTE freq_negative_verb        NUMERIC
+@ATTRIBUTE freq_positive_noun        NUMERIC
+@ATTRIBUTE freq_negative_noun        NUMERIC
+@ATTRIBUTE class                     {pos, neg, neu}
+
+@DATA
+1,0,1,0,1,0,pos pos
+0,0,1,0,0,1,neu pos
+0,0,3,1,0,1,neg neg
+0,0,0,0,0,1,neg pos
+1,0,0,0,1,0,pos pos
+0,0,1,0,2,0,pos neg
+0,0,2,0,1,2,neg pos
+0,0,0,0,0,0,neu neg
+0,0,0,0,0,0,neu neu
+0,0,0,0,0,0,neu pos
+0,0,2,0,1,0,pos pos
+0,0,2,0,1,2,neg pos
+0,0,0,0,1,0,pos neu
+1,0,2,0,3,1,pos pos
+0,0,1,0,1,0,pos neg
+0,0,0,0,1,0,neu neg
+0,0,1,0,0,0,pos neg
+1,0,1,1,2,0,pos neg
+1,0,0,0,0,0,pos neg
