@@ -1,0 +1,9 @@
+<div *ngFor='let user of live.users'>
+  <p>
+    <img [src]="user?.profile_image_url" alt="user-image">
+    @{{user?.screen_name}} dice: {{user?.text}}.
+  </p>
+  <p>
+    Analisis: {{user?.sent}}
+  </p>
+</div>
